@@ -1,0 +1,28 @@
+{
+  "name": "svelte-reactive-map-list",
+  "version": "1.0.0",
+  "license": "MIT",
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/brycedorn/svelte-reactive-map-list.git"
+  },
+  "scripts": {
+    "start": "parcel src/index.html --out-dir public",
+    "build": "parcel build src/index.html --out-dir public",
+    "build-gitlab": "parcel build src/index.html --out-dir public --public-url /svelte-reactive-map-list/"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-svelte": "^4.0.4",
+    "prettier": "^1.19.1",
+    "prettier-plugin-svelte": "^0.7.0"
+  },
+  "dependencies": {
+    "in-view": "^0.6.1",
+    "mapbox-gl": "^1.6.0",
+    "svelte": "^3.12.1"
+  }
+}

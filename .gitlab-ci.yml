@@ -1,0 +1,12 @@
+image: node:latest
+
+pages:
+  stage: deploy
+  script:
+  - npm install
+  - npm run build-gitlab
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
