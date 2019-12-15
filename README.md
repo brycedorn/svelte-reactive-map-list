@@ -1,6 +1,6 @@
 # svelte-reactive-map-list
 
-As part of a Svelte [tutorial](https://dev.to/bryce/an-interactive-scrolling-map-list-in-svelte-1942).
+As part of a Svelte [tutorial](https://dev.to/bryce/an-interactive-scrolling-map-list-in-svelte-34c3).
 
 [![pipeline status](https://gitlab.com/brycedorn/svelte-reactive-map-list/badges/master/pipeline.svg)](https://gitlab.com/brycedorn/svelte-reactive-map-list/commits/master)
 
