@@ -2,9 +2,7 @@
 
 As part of a Svelte [tutorial](https://dev.to/bryce/an-interactive-scrolling-map-list-in-svelte-34c3).
 
-[![pipeline status](https://gitlab.com/brycedorn/svelte-reactive-map-list/badges/master/pipeline.svg)](https://gitlab.com/brycedorn/svelte-reactive-map-list/commits/master)
-
-[https://brycedorn.gitlab.io/svelte-reactive-map-list/](https://brycedorn.gitlab.io/svelte-reactive-map-list/)
+[Demo](https://brycedorn.github.io/svelte-reactive-map-list/).
 
 ## Local development
 

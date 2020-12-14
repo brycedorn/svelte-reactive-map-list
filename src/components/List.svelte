@@ -98,7 +98,7 @@
     <i>
       This was made as part of a <a href="https://svelte.dev/">Svelte</a>
       tutorial on <a href="https://dev.to/bryce/an-interactive-scrolling-map-list-in-svelte-34c3">dev.to</a>.
-      View source on <a href="https://gitlab.com/brycedorn/svelte-reactive-map-list">GitLab</a>.
+      View source on <a href="https://github.com/brycedorn/svelte-reactive-map-list">GitHub</a>.
     </i>
   </div>
 </div>

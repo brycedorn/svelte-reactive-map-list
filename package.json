@@ -7,12 +7,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/brycedorn/svelte-reactive-map-list.git"
+    "url": "https://github.com/brycedorn/svelte-reactive-map-list.git"
   },
   "scripts": {
     "start": "parcel src/index.html --out-dir public",
     "build": "parcel build src/index.html --out-dir public",
-    "build-gitlab": "parcel build src/index.html --out-dir public --public-url /svelte-reactive-map-list/"
+    "build-github": "parcel build src/index.html --out-dir public --public-url https://bryce.io/svelte-reactive-map-list/ --no-source-maps"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
