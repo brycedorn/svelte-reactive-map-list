@@ -25,4 +25,3 @@ var t,e=arguments[3];!function(e,r){"object"==typeof exports&&"undefined"!=typeo
 },{"svelte/internal":"YkLP","./List.svelte":"lEJ8","./Map.svelte":"X9wp"}],"epB2":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=t(require("./components/App.svelte"));function t(e){return e&&e.__esModule?e:{default:e}}const o=new e.default({target:document.body});var r=o;exports.default=r;
 },{"./components/App.svelte":"HjHG"}]},{},["epB2"], null)
-//# sourceMappingURL=/main.051dae9c.js.map
