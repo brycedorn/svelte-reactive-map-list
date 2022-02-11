@@ -3,16 +3,29 @@
     display: flex;
     flex-wrap: wrap;
     overflow: scroll;
+    scroll-snap-type: y proximity;
   }
 
   .list-item {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2em;
     line-height: 1.5em;
+    padding: 40px;
+    scroll-snap-align: start;
+  }
+
+  #list-item-0 {
+    scroll-snap-align: none;
+  }
+
+  :global(.list-item p:last-child) {
+    margin: 0;
+  }
+
+  .separator {
+    border-bottom: #ccc solid 1px;
     width: 100%;
-    margin: 20px 40px;
-    border-bottom: #ccc dotted 4px;
-    padding-bottom: 10px;
+    margin: 0 40px;
   }
 
   img {
@@ -21,6 +34,7 @@
 
   .head {
     margin: 30px 40px 0 40px;
+    scroll-snap-align: none;
   }
 
   .tail {
@@ -85,6 +99,7 @@
     </i>
     <h1>Where To Drink Coffee In Kyoto, Japan</h1>
   </div>
+  <div class="separator" />
   {#each listItems as listItem, index}
     <div class="list-item" id="list-item-{index}">
       <a href="{listItem.website}">
@@ -93,6 +108,9 @@
       </a>
       {@html listItem.description}
     </div>
+    {#if index < listItems.length}
+      <div class="separator" />
+    {/if}
   {/each}
   <div class="tail">
     <i>

@@ -43,7 +43,7 @@
     // Create the map
     mapRef = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/light-v10?optimize=true',
+      style: 'mapbox://styles/mapbox/outdoors-v11?optimize=true',
       center: listItems[0].coordinates,
       zoom: 13
     });
@@ -62,7 +62,7 @@
         },
         layout: {
           'icon-image': 'cafe-15',
-          'icon-size': 2,
+          'icon-size': 1.5,
           'icon-allow-overlap': true
         }
       });
