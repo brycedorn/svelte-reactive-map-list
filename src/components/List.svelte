@@ -7,11 +7,24 @@
   }
 
   .list-item {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2em;
     line-height: 1.5em;
     padding: 40px;
     scroll-snap-align: start;
+    width: 100%;
+  }
+
+  a {
+    color: #000;
+    text-decoration-color: #ccc;
+  }
+
+  a:hover {
+    text-decoration-color: #000;
+  }
+
+  .list-item p {
+    margin-bottom: 1.4em;
   }
 
   #list-item-0 {
@@ -28,23 +41,26 @@
     margin: 0 40px;
   }
 
-  img {
-    width: 100%;
-  }
-
   .head {
-    margin: 30px 40px 0 40px;
+    margin: 0 40px;
     scroll-snap-align: none;
-  }
-
-  .tail {
-    margin: 20px 40px;
-    padding-bottom: 40px;
   }
 
   h1 {
     font-size: 3.4em;
-    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-top: 0.4em;
+  }
+
+  h1, h2 {
+    font-family: 'Manrope', serif;
+  }
+
+  p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
 </style>
 
@@ -53,6 +69,8 @@
   import inView from 'in-view';
   import { listItems, sprudgeArticle } from './consts.js';
   import { activeListItem, activeMapItem } from './stores.js';
+  import InstagramEmbed from './InstagramEmbed.svelte';
+  import flag from '../img/amsterdam.svg';
 
   // Define the ref
   let listRef;
@@ -91,32 +109,27 @@
 
 <div id="list-items" bind:this="{listRef}">
   <div class="head">
-    <i>
-      Note: I took this list from
-      <a href="https://sprudge.com/">Sprudge</a>
-      to use in this demo. Read the original article by Eric Tessier
-      <a href="{sprudgeArticle}">here</a>.
-    </i>
-    <h1>Where To Drink Coffee In Kyoto, Japan</h1>
+    <h1>
+      Where To Drink Coffee In Amsterdam
+      <img width="64" src={flag} alt="Flag of Amsterdam" />
+    </h1>
+    <p>
+      Created as part of a <a href="https://svelte.dev/">Svelte</a>
+      tutorial on <a href="https://dev.to/bryce/an-interactive-scrolling-map-list-in-svelte-34c3">dev.to</a>.
+      View source on <a href="https://github.com/brycedorn/svelte-reactive-map-list">GitHub</a>.
+    </p>
   </div>
   <div class="separator" />
   {#each listItems as listItem, index}
     <div class="list-item" id="list-item-{index}">
       <a href="{listItem.website}">
-        <img src="{listItem.image}" alt="{listItem.name}" />
         <h2>{listItem.name}</h2>
       </a>
-      {@html listItem.description}
+      <p>{listItem.description}</p>
+      <InstagramEmbed id={listItem.instagramPostId} />
     </div>
     {#if index < listItems.length}
       <div class="separator" />
     {/if}
   {/each}
-  <div class="tail">
-    <i>
-      This was made as part of a <a href="https://svelte.dev/">Svelte</a>
-      tutorial on <a href="https://dev.to/bryce/an-interactive-scrolling-map-list-in-svelte-34c3">dev.to</a>.
-      View source on <a href="https://github.com/brycedorn/svelte-reactive-map-list">GitHub</a>.
-    </i>
-  </div>
 </div>

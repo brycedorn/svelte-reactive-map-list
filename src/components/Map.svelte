@@ -1,13 +1,12 @@
 <style>
   #map {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
   }
 
   #map:before {
     box-shadow: 20px 0 10px -10px rgba(0, 0, 0, 0.15) inset;
     content: '';
-    height: 100%;
+    height: 100vh;
     left: 0;
     position: absolute;
     width: 20px;
@@ -23,11 +22,11 @@
 
   let mapRef;
 
-  function generateFeature({ name, image, coordinates }, index) {
+  function generateFeature({ name, address, coordinates, website }, index) {
     return {
       type: 'Feature',
       properties: {
-        description: `<img width="100%" src="${image}"/><b>${name}</b>`,
+        description: `<p><b>${name}</b><br>${address}<br><a href="${website}">${website}</a></p>`,
         id: index
       },
       geometry: {
@@ -43,9 +42,9 @@
     // Create the map
     mapRef = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/outdoors-v11?optimize=true',
+      style: 'mapbox://styles/mapbox/streets-v12',
       center: listItems[0].coordinates,
-      zoom: 13
+      zoom: 13.5
     });
 
     mapRef.on('load', function() {
@@ -61,7 +60,7 @@
           }
         },
         layout: {
-          'icon-image': 'cafe-15',
+          'icon-image': 'cafe',
           'icon-size': 1.5,
           'icon-allow-overlap': true
         }

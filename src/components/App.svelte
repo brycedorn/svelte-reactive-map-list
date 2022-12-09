@@ -12,13 +12,13 @@
 
   .left {
     align-items: center;
-    width: 60%;
+    width: 40%;
     justify-content: center;
   }
 
   .right {
     justify-content: space-between;
-    width: 40%;
+    width: 60%;
   }
 </style>
 
