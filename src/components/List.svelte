@@ -62,6 +62,10 @@
   p {
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
+
+  img {
+    margin-left: 0.15em;
+  }
 </style>
 
 <script>
@@ -126,7 +130,7 @@
         <h2>{listItem.name}</h2>
       </a>
       <p>{listItem.description}</p>
-      <InstagramEmbed id={listItem.instagramPostId} />
+      <InstagramEmbed id={listItem.instagramPostId} name={listItem.name} />
     </div>
     {#if index < listItems.length}
       <div class="separator" />
