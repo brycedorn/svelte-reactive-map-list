@@ -14,7 +14,7 @@ export const listItems = [
     name: 'Lot61',
     address: 'Kinkerstraat 112, 1053 ED Amsterdam',
     website: 'https://lot61.com',
-    instagramPostId: 'Ck-vRc2jeGX',
+    instagramPostId: 'B6LLBg1ji6F',
     description: 'Aussie-owned coffee roastery in Oud West neighborhood. Try the espresso tonic if you\'re feeling adventurous!',
     coordinates: [4.8697435,52.3668576]
   },
