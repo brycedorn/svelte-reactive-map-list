@@ -7,6 +7,7 @@ As part of a Svelte [tutorial](https://dev.to/bryce/an-interactive-scrolling-map
 ## Local development
 
 ```bash
+cp .env.example .env
 npm install
 npm start
 ```

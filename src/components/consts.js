@@ -1,5 +1,4 @@
-export const accessToken =
-  'pk.eyJ1IjoiYnVyY2UiLCJhIjoiY2s0M2huOWhkMDgydDNrcnF6NGZhYnJlZSJ9._HWRFgau8GQulfNwSzyIlQ';
+export const accessToken = process.env.MAPBOX_ACCESS_TOKEN;
 
 export const listItems = [
   {
