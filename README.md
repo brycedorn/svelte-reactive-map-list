@@ -2,6 +2,8 @@
 
 As part of a Svelte [tutorial](https://dev.to/bryce/an-interactive-scrolling-map-list-in-svelte-34c3).
 
+[![Build and Deploy](https://github.com/brycedorn/svelte-reactive-map-list/actions/workflows/deploy.yml/badge.svg)](https://github.com/brycedorn/svelte-reactive-map-list/actions/workflows/deploy.yml)
+
 [Demo](https://brycedorn.github.io/svelte-reactive-map-list/).
 
 ## Local development
